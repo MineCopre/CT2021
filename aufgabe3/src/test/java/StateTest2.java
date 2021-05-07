@@ -31,7 +31,7 @@ class StateTest2 {
 		assertEquals("S5", SbHard3.getStateName());
 	}
 
-	@Test
+		@Test
 	void transitionCoverage1() {
 		SbHard3.start();
 		assertEquals("S1", SbHard3.getStateName());
@@ -51,11 +51,7 @@ class StateTest2 {
 		assertEquals("S2", SbHard3.getStateName());
 		SbHard3.transition("b");
 		assertEquals("S4", SbHard3.getStateName());
-		SbHard3.transition("c");
-		assertEquals("S6", SbHard3.getStateName());
-		SbHard3.transition("d");
-		assertEquals("S5", SbHard3.getStateName());
-		SbHard3.transition("a");
+		SbHard3.transition("b");
 		assertEquals("S3", SbHard3.getStateName());
 		SbHard3.transition("c");
 		assertEquals("S5", SbHard3.getStateName());
@@ -68,7 +64,11 @@ class StateTest2 {
 		assertEquals("S1", SbHard3.getStateName());
 		SbHard3.transition("a");
 		assertEquals("S4", SbHard3.getStateName());
-		SbHard3.transition("b");
+		SbHard3.transition("c");
+		assertEquals("S6", SbHard3.getStateName());
+		SbHard3.transition("d");
+		assertEquals("S5", SbHard3.getStateName());
+		SbHard3.transition("a");
 		assertEquals("S3", SbHard3.getStateName());
 	}
 
