@@ -3,18 +3,18 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
-class StateTest2 {
+class StateTest1 {
 
 	@Test
 	void stateCoverage1() {
-		SbHard3.start();
-		assertEquals("S1", SbHard3.getStateName());
-		SbHard3.transition("c");
-		assertEquals("S2", SbHard3.getStateName());
-		SbHard3.transition("d");
-		assertEquals("S6", SbHard3.getStateName());
-		SbHard3.transition("a");
-		assertEquals("Final", SbHard3.getStateName());
+		Sbtask2.start();
+		assertEquals("S1", Sbtask2.getStateName());
+		Sbtask2.transition("c");
+		assertEquals("S2", Sbtask2.getStateName());
+		Sbtask2.transition("d");
+		assertEquals("S6", Sbtask2.getStateName());
+		Sbtask2.transition("a");
+		assertEquals("Final", Sbtask2.getStateName());
 	}
 
 	@Test
